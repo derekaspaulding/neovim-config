@@ -1,4 +1,3 @@
-print("In config.lua")
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
 --  See `:help vim.highlight.on_yank()`
@@ -15,7 +14,6 @@ vim.g.have_nerd_font = true
 
 -- Make line numbers default
 vim.opt.number = false
--- vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
@@ -48,3 +46,9 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 15
+
+-- Basic tab settings. Will usually be overridden by vim-sleuth
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
+vim.opt.expandtab = true
